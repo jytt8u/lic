@@ -1,50 +1,87 @@
+/* Общие стили */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    height: 100vh;
+}
+
+/* Карточка пропуска */
+.pass {
+    width: 90%;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     text-align: center;
-    background-color: #f0f8ff;
+    border: 2px solid #b22222;
 }
 
+/* Шапка */
 header {
-    background-color: #b22222;
+    background: linear-gradient(to right, #b22222, #ff6347);
     color: white;
-    padding: 20px;
+    padding: 15px;
 }
 
-h1 {
+header h1 {
     margin: 0;
+    font-size: 1.5em;
 }
 
-.main-photo {
-    width: 300px;
-    border-radius: 10px;
-    margin: 20px 0;
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
 }
 
-main {
+/* Фото */
+.photo-container {
+    padding: 20px 0;
+    background-color: #f4f4f4;
+}
+
+.photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #b22222;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Ссылки */
+.links {
     padding: 20px;
 }
 
-nav a {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #b22222;
+.links a {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background: #b22222;
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 1em;
+    transition: background 0.3s ease;
 }
 
-nav a:hover {
-    background-color: #800000;
+.links a:hover {
+    background: #ff6347;
 }
 
+/* Подвал */
 footer {
-    background-color: #b22222;
-    color: white;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+footer a {
+    text-decoration: none;
+    color: #b22222;
+    font-weight: bold;
 }
